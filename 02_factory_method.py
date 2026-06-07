@@ -26,7 +26,6 @@ PYTHON CONCEPTS YOU'LL LEARN HERE
 
 from abc import ABC, abstractmethod
 
-
 # ---------------------------------------------------------------------------
 # THE PRODUCTS — the things being created
 # ---------------------------------------------------------------------------

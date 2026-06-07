@@ -18,7 +18,6 @@ Singleton is the classic case where we hijack __new__: if an instance
 already exists, we return THAT instead of creating a new one.
 """
 
-
 class Logger:
     # This is a CLASS attribute (note: defined on the class, not inside a
     # method). It is shared by the class itself — there is exactly one
@@ -26,7 +25,7 @@ class Logger:
     # The leading underscore is a Python convention meaning "private-ish,
     # don't touch this from outside".
     _instance = None
-
+   
     def __new__(cls):
         # `cls` is the class itself (Logger), like `self` but for the class.
         # __new__ receives the class because its job is to produce an
